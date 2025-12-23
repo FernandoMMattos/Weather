@@ -1,6 +1,6 @@
 import { WeatherResponse } from "./IWeather";
 
-const apiURL = "http://api.weatherapi.com/v1";
+const apiURL = "https://api.weatherapi.com/v1";
 
 export const getWeather = async (place: string): Promise<WeatherResponse> => {
   const res = await fetch(
