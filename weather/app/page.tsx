@@ -83,7 +83,7 @@ export default function Home() {
 
         {error && <p className="mt-8 text-sm text-red-500">{error}</p>}
 
-        {weather && (
+        {weather ? (
           <section
             className="
               mt-10
@@ -133,7 +133,7 @@ export default function Home() {
               <p>Wind: {weather.current.wind_kph} km/h</p>
             </div>
           </section>
-        )}
+        ): <p className="">Search a city to display the weather info</p>}
       </main>
 
       <footer className="mt-auto py-6 text-sm text-(--text-muted)">
